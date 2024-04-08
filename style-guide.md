@@ -13,17 +13,17 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Nutmeg: hsl(14, 45%, 36%)
-- Dark Raspberry: hsl(332, 51%, 32%)
+- Nutmeg: hsl(14, 45%, 36%) #854632 - headings
+- Dark Raspberry: hsl(332, 51%, 32%) #7b284f -prep time heading
 
 ### Neutral
 
-- White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
+- White:
+- Rose White: hsl(330, 100%, 98%) #fff5fa
+- Eggshell: hsl(30, 54%, 90%) #f3e6d8 -- background
+- Light Grey: hsl(30, 18%, 87%) #e4ded8
+- Wenge Brown: hsl(30, 10%, 34%) #5f574e prep time bullet points
+- Dark Charcoal: hsl(24, 5%, 18%) #302d2c
 
 ## Typography
 
@@ -38,5 +38,3 @@ The designs were created to the following widths:
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 400, 600, 700
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
