@@ -27,6 +27,8 @@ hr {
   background-color: #ffffff;
   padding: 24px;
   height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
 }
 h1 {
   color: #302d2c;
@@ -97,14 +99,14 @@ ol li::before {
 }
 .nutrition-facts {
   display: flex;
-}
-.nutrition p {
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-.nutrition-facts .item {
-  display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   height: 250px;
+}
+.nutrition p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.nutrition-facts .item {
+  width: 50%;
 }
