@@ -16,10 +16,20 @@ h3,
 p {
   margin: 0;
 }
+hr {
+  width: 100%;
+  color: #e4ded8;
+  opacity: 0.5;
+  margin: 20px 0 20px 0;
+}
 .container {
   width: 375px;
   background-color: #ffffff;
   padding: 24px;
+  height: 100%;
+}
+h1 {
+  color: #302d2c;
 }
 .title-description img {
   border-radius: 8px;
@@ -36,11 +46,27 @@ p {
 }
 .prep-time h2 {
   color: #7b284f;
+  margin-bottom: 10px;
 }
-.prep-time ul {
+.prep-time ul,
+.ingredients ul {
   margin: 0;
   padding: 0 0 0 20px;
   display: inline-block;
+  color: #5f574e;
+}
+.ingredients li {
+  margin-bottom: 10px;
+}
+.prep {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.instructions ol {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: #5f574e;
 }
 .ingredients h2,
 .instructions h2,
@@ -51,8 +77,34 @@ p {
   font-weight: 400;
   font-size: 1.2rem;
 }
-.ingredients ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0 0 0 20px;
+
+ol {
+  list-style: none;
+  counter-reset: num;
+}
+
+ol li {
+  counter-increment: num;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+ol li::before {
+  content: counter(num) ". ";
+  color: #854632;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.nutrition-facts {
+  display: flex;
+}
+.nutrition p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.nutrition-facts .item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 250px;
 }
