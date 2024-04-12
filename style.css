@@ -5,30 +5,34 @@ html {
   font-weight: 400;
 }
 body {
-  padding: 20px;
   background-color: #f3e6d8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 h2,
 h3,
 p {
   margin: 0;
-}
-hr {
-  width: 100%;
-  color: #e4ded8;
-  opacity: 0.5;
-  margin: 20px 0 20px 0;
+  padding: 0;
 }
 .container {
-  width: 375px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
   background-color: #ffffff;
-  padding: 24px;
   height: 100%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
+  margin: 100px auto;
+}
+.inner-container img {
+  padding: 25px;
+  max-width: 550px;
+  height: 300px;
+  border-radius: 40px;
+}
+.lower-container {
+  padding: 25px;
 }
 h1 {
   color: #302d2c;
@@ -108,5 +112,21 @@ ol li::before {
   margin-bottom: 20px;
 }
 .nutrition-facts .item {
+  font-size: 0.9rem;
   width: 50%;
+  padding-bottom: 10px;
+}
+.nutrition-facts .item:nth-child(-n + 6) {
+  border-bottom: 1px solid #e4ded8;
+}
+.nutrition-facts .facts {
+  color: #854632;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+@media (max-width: 576px) {
+  .container img {
+    border-radius: 0px;
+    padding: 0;
+  }
 }
