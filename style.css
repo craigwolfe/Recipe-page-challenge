@@ -5,9 +5,9 @@ html {
   font-weight: 400;
 }
 body {
-  background-color: #f3e6d8;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 h2,
 h3,
@@ -19,27 +19,21 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   height: 100%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
-  margin: 100px auto;
+  margin: auto;
 }
-.inner-container img {
-  padding: 25px;
-  max-width: 550px;
+img {
   height: 300px;
-  border-radius: 40px;
+  max-width: 100%;
 }
 .lower-container {
   padding: 25px;
 }
 h1 {
   color: #302d2c;
-}
-.title-description img {
-  border-radius: 8px;
-  width: 100%;
 }
 .title-description h1 {
   font-size: 1.5rem;
@@ -123,10 +117,4 @@ ol li::before {
   color: #854632;
   font-weight: bold;
   font-size: 0.9rem;
-}
-@media (max-width: 576px) {
-  .container img {
-    border-radius: 0px;
-    padding: 0;
-  }
 }
