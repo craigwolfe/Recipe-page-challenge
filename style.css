@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background-color: #f3e6d8;
 }
 h2,
 h3,
@@ -23,14 +24,25 @@ p {
   height: 100%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
-  margin: auto;
+  margin: 100px auto;
+  background-color: white;
+}
+.inner-container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.inner-container img {
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 20px;
+}
+.lower-container {
+  padding: 20px;
 }
 img {
   height: 300px;
-  max-width: 100%;
-}
-.lower-container {
-  padding: 25px;
 }
 h1 {
   color: #302d2c;
@@ -39,14 +51,20 @@ h1 {
   font-size: 1.5rem;
   font-family: "Young Serif", serif;
 }
+.prep {
+  font-weight: bold;
+}
 .prep-time {
   background-color: #fff5fa;
   padding: 20px;
   margin-top: 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
 }
 .prep-time h2 {
   color: #7b284f;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 .prep-time ul,
 .ingredients ul {
@@ -58,16 +76,18 @@ h1 {
 .ingredients li {
   margin-bottom: 10px;
 }
-.prep {
-  margin-left: 10px;
-  font-weight: bold;
+li .prep {
+  font-size: 0.85rem;
+}
+.instructions {
+  font-size: 0.85rem;
 }
 .instructions ol {
-  margin: 0;
+  margin-left: 20px;
   padding: 0;
-  display: inline-block;
   color: #5f574e;
 }
+
 .ingredients h2,
 .instructions h2,
 .nutrition h2 {
@@ -78,23 +98,6 @@ h1 {
   font-size: 1.2rem;
 }
 
-ol {
-  list-style: none;
-  counter-reset: num;
-}
-
-ol li {
-  counter-increment: num;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-ol li::before {
-  content: counter(num) ". ";
-  color: #854632;
-  margin-right: 10px;
-  font-weight: bold;
-}
 .nutrition-facts {
   display: flex;
   align-items: flex-start;
@@ -117,4 +120,16 @@ ol li::before {
   color: #854632;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0;
+    border-radius: none;
+  }
+  .inner-container img {
+    border-radius: none;
+    margin: 0;
+    width: 100%;
+  }
 }
