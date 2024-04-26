@@ -69,6 +69,4 @@ I want to continue focusing on learning more about CSS Grid and Flexbox.
 - [CSS MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) - This helped me for setting the ordered list numbers color.
 
 ## Author
-
-- Website - [Craig Wolfe](https://www.your-site.com)
 - Frontend Mentor - [@craigwolfe](https://www.frontendmentor.io/profile/craigwolfe)
