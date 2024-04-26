@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- [Solution URL:](https://your-solution-url.com)
+- [Solution URL:](https://www.frontendmentor.io/solutions/recipe-page-responsive-mobile-design-dv-LZidm2i)
 - [Live Site:](https://craigwolfe.github.io/Recipe-page-challenge/)
 
 ## My process
